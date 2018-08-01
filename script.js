@@ -7,7 +7,15 @@ document.addEventListener("DOMContentLoaded",function(){
   ["Migrate our config vars to Vault"],  
   ["Security fixes (npm audit, whitesource, github warnings)"],  
   ["Integrate the IP flags client into apps"],   
-  ["Linting"]];
+  ["Linting"]
+  ["Renaming things"]
+  ["De-gulpifying all our repos (we don’t need gulp and it has some security issues)"] 
+  ["(Ad hoc) Fixing things"]];
+
+
+
+
+
 
     let oldQuoteIndex;
 
