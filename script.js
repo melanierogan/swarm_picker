@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",function(){
     
 
-  const quotesPool = [["Migrate from Travis to CircleCI 2.0"],            
+  const swarmPool = [["Migrate from Travis to CircleCI 2.0"],            
   ["Test coverage"],  
   ["Migrate our config vars to Vault"],  
   ["Security fixes (npm audit, whitesource, github warnings)"],  
@@ -13,23 +13,19 @@ document.addEventListener("DOMContentLoaded",function(){
   ["(Ad hoc) Fixing things"]];
 
 
-
-
-
-
     let oldQuoteIndex;
 
     function generateNumber(dataPool) {
       return Math.floor(Math.random() * dataPool.length);
     }
   
-    function generateNewQuote() {
-      let index = generateNumber(quotesPool);
+    function generateNewSwarm() {
+      let index = generateNumber(swarmPool);
 
       while (index === oldQuoteIndex) {
-        index = generateNumber(quotesPool);
+        index = generateNumber(swarmPool);
       }
-      let newQuote = quotesPool[index];
+      let newQuote = swarmPool[index];
       let quote = document.getElementById("quote");
 
       quote.innerHTML = newQuote[0];
@@ -41,14 +37,14 @@ document.addEventListener("DOMContentLoaded",function(){
     function onQuoteButtonClick() {
       let randomQuoteButton = document.querySelector("#random-quote");
       randomQuoteButton.addEventListener("click", function(){
-        generateNewQuote();
+        generateNewSwarm();
       });
     }
   
     onQuoteButtonClick();
   
     window.onload = function () {
-      generateNewQuote();
+      generateNewSwarm();
 
     };
     
