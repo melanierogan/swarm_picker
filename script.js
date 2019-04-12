@@ -1,16 +1,18 @@
 
 document.addEventListener("DOMContentLoaded",function(){
-    
+const swarmThings = require('./contents');    
 
-  const swarmPool = [["Migrate from Travis to CircleCI 2.0"],            
-  ["Test coverage"],  
-  ["Migrate our config vars to Vault"],  
-  ["Security fixes (npm audit, whitesource, github warnings)"],  
-  ["Integrate the IP flags client into apps"],   
-  ["Linting"],
-  ["Renaming things"],
-  ["De-gulpifying all our repos (we don’t need gulp and it has some security issues)"],
-  ["(Ad hoc) Fixing things"]];
+  const swarmPool = [
+  [swarmThings.[0].theme],            
+  [swarmThings.data[1].theme],  
+  [swarmThings.data[2].theme],  
+  [swarmThings.data[3].theme],  
+  [swarmThings.data[4].theme],   
+  [swarmThings.data[5].theme],
+  [swarmThings.data[6].theme],
+  [swarmThings.data[7].theme],
+  [swarmThings.data[8].theme]
+];
 
 
     let oldQuoteIndex;

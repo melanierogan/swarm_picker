@@ -1,0 +1,26 @@
+{
+  "name": "swarm_picker",
+  "version": "1.0.0",
+  "description": "pick the swarms",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melanierogan/swarm_picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melanierogan/swarm_picker/issues"
+  },
+  "homepage": "https://github.com/melanierogan/swarm_picker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "exphbs": "^1.2.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "node-fetch": "^2.3.0"
+  }
+}
