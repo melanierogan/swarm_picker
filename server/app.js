@@ -9,11 +9,11 @@ const createApp = () => {
         defaultLayout: 'main'
     });
 
+
     app.engine('html', handlebarsInstance.engine);
+    app.use(express.static('public'))
     app.set('view engine', '.html');
-    app.get('/', swarmThings, (req, res) => {
-        res.render('home');
-    });
+    app.get('/', swarmThings);
 return app;
 
 };

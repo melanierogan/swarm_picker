@@ -89,6 +89,10 @@ body {
   .buttons-area {
     float: left;
   }
+
+  .hidey{
+    display:none
+  }
   
   .btn {
     float: left;
