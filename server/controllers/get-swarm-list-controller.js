@@ -19,9 +19,6 @@ const swarmThings = async (req, res) => {
 		if (response.status === 200) {
 			const json = await response.json(); 
 
-			
-			// eslint-disable-next-line no-console
-			console.log(json.theme, 'call to API successful');
 			const debug = JSON.stringify(json)
 			res.render('home', { themes: json, debug: debug })        
 		} 
