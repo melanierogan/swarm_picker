@@ -66,8 +66,8 @@ const randomTopic = topics[Math.floor(Math.random()*topics.length)];
 
 console.log(topics, 'yay topics');
 
-document.getElementById("myBtn").addEventListener("click", function(){
-  document.getElementById("quote").innerHTML = randomTopic
+document.getElementById("myBtn").addEventListener("mouseup", function(){
+  document.getElementById("topic").innerHTML = randomTopic
 });
 
 //document.getElementById("quote").innerHTML = randomTopic
