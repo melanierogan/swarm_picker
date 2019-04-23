@@ -8,7 +8,9 @@ for (let topic of selectTopic) {
 
 }
 
-const randomTopic = topics[Math.floor(Math.random()*topics.length)];
+const randomTopic = () => {
+  return topics[Math.floor(Math.random()*topics.length)];
+} 
 
 console.log(topics, 'yay topics');
 
@@ -17,8 +19,17 @@ console.log(topics, 'yay topics');
 //   document.getElementById("topic").innerHTML = randomTopic
 // });
 
-const el = document.getElementById("topic").innerHTML = randomTopic
-el.addEventListener("click", false);
+const el = document.getElementById("topic").innerHTML = randomTopic()
+//el.addEventListener("click", false);
+
+const refresh = document.getElementById("myBtn")
+const refreshFunction = (event) => { 
+  console.log('this is doing things')
+  event.preventDefault()
+  document.getElementById("topic").innerHTML = randomTopic()
+};
+refresh.addEventListener("click", refreshFunction );
+
 
 // element.addEventListener("mouseover", myFunction);
 // element.addEventListener("click", mySecondFunction);
