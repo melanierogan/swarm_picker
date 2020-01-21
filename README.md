@@ -1,6 +1,6 @@
 ## Welcome to swarm picker
 
-This is a quick and simple app to help teams pick a swarm idea from a list of topics from a bertha URL.
+This is a small app to help teams pick a swarm idea from a list of topics from a bertha URL. It uses client side javascript and makes use of the FT interactive team's tool, Bertha
 
 ### Constructing a URL 
 
