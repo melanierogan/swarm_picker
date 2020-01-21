@@ -1,5 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const env = require('dotenv').config();
 const swarmThings = require('../server/controllers/get-swarm-list-controller');
 const createApp = () => {
 	const app = express();
