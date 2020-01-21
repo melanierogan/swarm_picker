@@ -1,17 +1,19 @@
 ## Welcome to swarm picker
 
-This is a small app to help teams pick a swarm idea from a list of topics from a bertha URL. It uses client side javascript and makes use of the FT interactive team's tool, Bertha
+This is a small app to help teams pick a swarm idea from a list of topics from a bertha URL. It uses client side javascript and makes use of the FT interactive team's tool, [Bertha](https://github.com/ft-interactive/bertha)
+
 
 ### Constructing a URL 
 
-
 https://bertha.ig.ft.com/{view|republish}/publish/gss/{spreadsheetKey}/{sheetNames}
+
 
 #### view/republish 
 
 view: serve the JSON from the cache, but make it first if it doesn't exist.
 republish: purge the cache and serve a fresh version of the JSON.
 spreadsheetKey The Google Key of the Spreadsheet. Get this from the URL of the spreadsheet.
+
 
 #### sheetNames 
 
