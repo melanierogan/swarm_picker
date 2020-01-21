@@ -5,36 +5,45 @@ body {
     background: #ECF5B7;
     font-family: sans-serif;
     text-align: center;
-    -moz-transition: all .6s; 
+    -moz-transition: all .6s;
     -webkit-transition: all .6s;
     -o-transition: all .6s;
     transition: all .6s;
-  }
-  
+	}
+
+	a {
+		color: #7D9014;
+		font-weight: 300;
+	}
+
+	a:hover {
+		color: #9CB418;
+	}
+
   .border {
     border: 6px solid #9CB418;
     -webkit-box-shadow: 4px 4px 0 3px #7D9014;
     -moz-box-shadow: 4px 4px 0 3px #7D9014;
     box-shadow: 4px 4px 0 3px #7D9014;
   }
-  
+
   .border-smaller {
     border: 4px solid #9CB418;
     -webkit-box-shadow: 3px 3px 0 2px #7D9014;
     -moz-box-shadow: 3px 3px 0 2px #7D9014;
     box-shadow: 3px 3px 0 2px #7D9014;
   }
-  
+
   /*.border-smaller:active {
     box-shadow: none;
   } */
-  
+
   .transparent {
       zoom: 1;
       filter: alpha(opacity=40);
       opacity: 0.4;
   }
-  
+
   .container {
     margin-top: -40px;
     width: 100%;
@@ -47,14 +56,14 @@ body {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #7D9014;
-    } 
-  
+    }
+
   header {
     margin-bottom: 20px;
     font-size: 22px;
     text-transform: uppercase;
   }
-  
+
   .topic-box {
     border-radius: 1px;
     width: 90%;
@@ -64,12 +73,12 @@ body {
     display: inline-block;
     background-color: rgba(255,255,255,.7);
   }
-  
+
   .topic-area {
     min-height: 200px;
     position: relative;
     }
-  
+
   #topic {
     padding: 40px 20px;
     font-size: 28px;
@@ -85,7 +94,7 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
   }
-  
+
   .buttons-area {
     float: left;
   }
@@ -93,42 +102,43 @@ body {
   .hidey{
     display:none
   }
-  
+
   .btn {
     float: left;
-    background-color: #ECF5B7;
+		background-color: #ECF5B7;
+		padding: 6px 16px;
     border-radius: 1px;
     font-size: 20px;
     margin-right: 8px;
     text-decoration: none;
   }
-  
+
   .btn:first-of-type {
     margin-right: 24px;
   }
   #random-topic {
     padding: 12px 24px;
   }
-  
+
   #tweet-topic {
     padding: 6px 16px;
     font-size: 30px;
   }
-  
+
   .author-area p::before {
     content: "- ";
   }
-  
+
   .author-area {
     float: right;
   }
-  
+
   #author {
     font-size: 18px;
     padding: 16px 8px 16px 0px;
     font-style: italic;
   }
-  
+
   footer {
     padding-top: 10px;
     font-size: 16px;
@@ -145,18 +155,18 @@ body {
     font-size: 80px;
     padding: 80px;
     color: #7D9014;
-     
+
     }
-    
-  
+
+
   @media only screen and (max-width: 650px) {
     .container {
     position: relative;
     margin-top: 0;
     padding-top: 30px;
     height: 1vh;
-    } 
-    
+    }
+
     .topic-box {
       width: 92%;
     }
@@ -167,12 +177,12 @@ body {
     padding: 30px 20px 0 20px;
     width: 100%;
     }
-    
+
     .author-area {
       float: none;
       display: block;
     }
-    
+
     .btn {
       vertical-align:middle;
       float: none;
@@ -186,7 +196,7 @@ body {
     #tweet-topic {
     padding: 6px 16px;
     }
-  
+
   }
   @media only screen and (max-width: 400px) {
     .btn:first-of-type {

@@ -1,9 +1,9 @@
-## Welcome to swarm picker
+# Welcome to swarm picker
 
 This is a small app to help teams pick a swarm idea from a list of topics from a bertha URL. It uses client side javascript and makes use of the FT interactive team's tool, [Bertha.](https://github.com/ft-interactive/bertha)
 
 
-### Constructing a URL 
+## Constructing a URL 
 
 https://bertha.ig.ft.com/{view|republish}/publish/gss/{spreadsheetKey}/{sheetNames}
 
@@ -31,14 +31,13 @@ Sheets are be optional if prepending with a '+'. In the example below the foo is
 ```
 /foo,+bar,+baz
 ```
---
 
 A complete example might look like this:
 
 https://bertha.ig.ft.com/view/publish/gss/ewrew98uiewr-809832432321mdwl/data,options,credits
 
 
-### Show me the swarms!
+## Show me the swarms!
 
 You can find the app running [here.](https://mr-swarm-picker.herokuapp.com/)
 
